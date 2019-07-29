@@ -3,16 +3,7 @@
     <div class="row">
 
       <div class="col-4">
-        <div class="ab-portrait">
-          <img src="BIO IMAGE" />
-          <h1>Ash Blue</h1>
-          <h2>Senior Web Developer</h2>
-          <ul>
-            <li><a target="_blank" href="#">GitHub</a></li>
-            <li><a target="_blank" href="#">Twitter</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/ashblue/">LinkedIn</a></li>
-          </ul>
-        </div>
+        <BioCard/>
       </div>
 
       <div class="col">
@@ -45,8 +36,11 @@
 </template>
 
 <script>
+import BioCard from './organisms/BioCard.vue';
+
 export default {
   name: 'Intro',
+  components: { BioCard },
 };
 </script>
 
