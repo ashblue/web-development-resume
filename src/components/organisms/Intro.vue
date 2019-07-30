@@ -8,10 +8,10 @@
 
       <div class="col">
         <p>
-          Hi, my name's <strong>Ash Blue</strong>. I'm a <em>senior web developer</em> leading teams
-          to create web applications for 10+ years. My career has brought me everywhere from San
-          Francisco's startup scene to fortune 500s. I specialize in JavaScript full stack with
-          CI/CD to help empower teams to create cutting edge single page applications.
+          Hi, my name's <strong>Ash Blue</strong>. I'm a <em>senior web developer</em> with 10+
+          years of experience creating web applications. My career has brought me everywhere from
+          San Francisco's startup scene to fortune 500s. I specialize in JavaScript full stack with
+          CI/CD to help empower teams to create cutting edge solutions.
         </p>
 
         <h3>Details</h3>
@@ -23,9 +23,9 @@
 
         <h2>Resume</h2>
         <button class="btn btn-primary">Resume PDF</button>
-        <button class="btn btn-primary">Google Drive</button>
+        <button class="btn btn-primary">Resume Word</button>
+        <button class="btn btn-primary">Resume Google Drive</button>
       </div>
-
     </div>
 
     <div class="footer">
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import BioCard from './organisms/BioCard.vue';
+import BioCard from './BioCard.vue';
 
 export default {
   name: 'Intro',

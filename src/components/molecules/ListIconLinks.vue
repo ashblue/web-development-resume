@@ -1,25 +1,12 @@
 <template>
   <ul class="list-unstyled d-flex justify-content-center">
-    <!-- @TODO Feed off of a list -->
-    <li class="px-1">
+    <li v-for="iconLink in iconLinks"
+        v-bind:key="iconLink.title"
+        class="px-2">
       <IconLink
-        title="GitHub"
-        icon="github"
-        url="https://github.com/ashblue"
-      />
-    </li>
-    <li class="px-1">
-      <IconLink
-        title="Twitter"
-        icon="twitter"
-        url="https://twitter.com/ashbluewd"
-      />
-    </li>
-    <li class="px-1">
-      <IconLink
-        title="LinkedIn"
-        icon="linkedin"
-        url="https://www.linkedin.com/in/ashblue"
+        :title="iconLink.title"
+        :icon="iconLink.icon"
+        :url="iconLink.url"
       />
     </li>
   </ul>
@@ -28,10 +15,21 @@
 <script>
 import IconLink from '../atoms/IconLink.vue';
 
+export class IconLinkData {
+  constructor(title, icon, url) {
+    this.title = title;
+    this.icon = icon;
+    this.url = url;
+  }
+}
+
 export default {
   name: 'ListIconLinks',
   components: {
     IconLink,
+  },
+  props: {
+    iconLinks: Array,
   },
 };
 </script>

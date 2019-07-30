@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Intro from './components/Intro.vue';
+import Intro from './components/organisms/Intro.vue';
 
 export default {
   name: 'app',
