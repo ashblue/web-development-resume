@@ -1,9 +1,8 @@
 <template>
   <div>
-    <div class="row">
-
-      <div class="col-4">
-        <BioCard/>
+    <div class="row mt-5">
+      <div class="col-12 col-lg-4">
+        <BioCard class="mb-sm-4" />
       </div>
 
       <div class="col">

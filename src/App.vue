@@ -1,15 +1,22 @@
 <template>
-  <div class="container">
-    <Intro></Intro>
+  <div>
+    <!-- @TODO Move this content into a page -->
+    <MobileHeader class="d-lg-none" />
+
+    <div class="container">
+      <Intro></Intro>
+    </div>
   </div>
 </template>
 
 <script>
 import Intro from './components/organisms/Intro.vue';
+import MobileHeader from './components/organisms/MobileHeader.vue';
 
 export default {
   name: 'app',
   components: {
+    MobileHeader,
     Intro,
   },
 };
