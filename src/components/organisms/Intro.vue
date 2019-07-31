@@ -1,11 +1,15 @@
 <template>
   <div>
-    <div class="row mt-5">
-      <div class="col-12 col-lg-4">
-        <BioCard class="mb-sm-4" />
+    <div class="row mt-4 mb-5">
+      <div class="col-4 d-none d-lg-block">
+        <BioCard />
       </div>
 
       <div class="col">
+        <h2 class="text-lowercase h1">
+          About Me
+        </h2>
+
         <p>
           Hi, my name's <strong>Ash Blue</strong>. I'm a <em>senior web developer</em> with 10+
           years of experience creating web applications. My career has brought me everywhere from
@@ -13,33 +17,87 @@
           CI/CD to help empower teams to create cutting edge solutions.
         </p>
 
-        <h3>Details</h3>
-        <ul>
-          <li>Location: Denver</li>
-          <li>Phone: 312-344-3792</li>
-          <li>Email: ash@blueashes.com</li>
-        </ul>
+        <div class="mb-5">
+          <h3 class="text-hide">Details</h3>
 
-        <h2>Resume</h2>
-        <button class="btn btn-primary">Resume PDF</button>
-        <button class="btn btn-primary">Resume Word</button>
-        <button class="btn btn-primary">Resume Google Drive</button>
+          <div class="row">
+            <div class="col-3">
+              <Icon namespace="fas" icon="clock" />&nbsp;
+              <span class="text-uppercase font-weight-bold small align-text-bottom">Age</span>
+            </div>
+
+            <div class="col">
+              {{age}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <Icon namespace="fas" icon="map-marker" />
+              <span class="text-uppercase font-weight-bold"> Location</span>
+            </div>
+
+            <div class="col">
+              Denver
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <Icon namespace="fas" icon="phone" />
+              <span class="text-uppercase font-weight-bold"> Phone</span>
+            </div>
+
+            <div class="col">
+              <a href="tel:312-344-3792">312-344-3792</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <Icon namespace="fas" icon="envelope" />
+              <span class="text-uppercase font-weight-bold"> Email</span>
+            </div>
+
+            <div class="col">
+              <a href="mailto:ash@blueashes.com">ash@blueashes.com</a>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-hide">My Resume</h2>
+        <button class="btn btn-primary btn-lg btn-block mb-3">
+          <Icon namespace="fas" icon="file-pdf" />&nbsp;
+          Download Resume
+        </button>
+        <p class="small">
+          Resume available in multiple formats via
+          <a href="#">Google Drive <Icon icon="google-drive" /></a>
+        </p>
       </div>
-    </div>
-
-    <div class="footer">
-      <p>This site is hosted and deployed through GitHub pages. Click here to see the source.</p>
-      <p>Copyright</p>
     </div>
   </div>
 </template>
 
 <script>
 import BioCard from './BioCard.vue';
+import Icon from '../atoms/Icon.vue';
+
+function getBirthday() {
+  const birthday = new Date(1987, 8, 25);
+  const difference = Date.now() - birthday.getTime();
+  return new Date(difference).getUTCFullYear() - 1970;
+}
 
 export default {
   name: 'Intro',
-  components: { BioCard },
+  components: {
+    Icon,
+    BioCard,
+  },
+  data: () => ({
+    age: getBirthday(),
+  }),
 };
 </script>
 
