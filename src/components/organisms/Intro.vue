@@ -65,15 +65,7 @@
           </div>
         </div>
 
-        <h2 class="text-hide">My Resume</h2>
-        <button class="btn btn-primary btn-lg btn-block mb-3">
-          <Icon namespace="fas" icon="file-pdf" />&nbsp;
-          Download Resume
-        </button>
-        <p class="small">
-          Resume available in multiple formats via
-          <a href="#">Google Drive <Icon icon="google-drive" /></a>
-        </p>
+        <Resume />
       </div>
     </div>
   </div>
@@ -82,6 +74,7 @@
 <script>
 import BioCard from './BioCard.vue';
 import Icon from '../atoms/Icon.vue';
+import Resume from './Resume.vue';
 
 function getBirthday() {
   const birthday = new Date(1987, 8, 25);
@@ -92,6 +85,7 @@ function getBirthday() {
 export default {
   name: 'Intro',
   components: {
+    Resume,
     Icon,
     BioCard,
   },
