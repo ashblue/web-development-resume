@@ -11,10 +11,10 @@
         </h2>
 
         <p>
-          Hi, my name's <strong>Ash Blue</strong>. I'm a <em>senior web developer</em> with 10+
-          years of experience creating web applications. My career has brought me everywhere from
+          Hi, I'm <strong>Ash Blue</strong>. A <em>senior web developer</em> with 10+
+          years of experience creating web applications. My career has brought me from
           San Francisco's startup scene to fortune 500s. I specialize in JavaScript full stack with
-          CI/CD to help empower teams to create cutting edge solutions.
+          CI/CD to help teams create cutting edge solutions.
         </p>
 
         <div class="mb-5">
