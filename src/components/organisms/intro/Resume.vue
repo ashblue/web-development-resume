@@ -2,7 +2,7 @@
   <div class="ab-resume">
     <h2 class="text-hide">My Resume</h2>
 
-    <button class="btn btn-primary btn-lg btn-block mb-1">
+    <button class="btn btn-primary btn-lg btn-block mb-2">
       <Icon namespace="fas" icon="file-pdf" />&nbsp;
       Download Resume
     </button>

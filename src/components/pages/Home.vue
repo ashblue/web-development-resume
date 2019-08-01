@@ -2,8 +2,8 @@
   <div class="ab-p-home">
     <MobileBioCard class="ab-p-home__header d-lg-none" />
 
-    <div class="ab-p-home__content">
-      <div class="container">
+    <div class="ab-p-home__content overflow-hidden">
+      <div class="container position-relative">
         <Intro></Intro>
       </div>
     </div>
