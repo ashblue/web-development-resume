@@ -72,8 +72,8 @@
 </template>
 
 <script>
-import BioCard from './BioCard.vue';
-import Icon from '../atoms/Icon.vue';
+import BioCard from '../bio-cards/BioCard.vue';
+import Icon from '../../atoms/Icon.vue';
 import Resume from './Resume.vue';
 
 function getBirthday() {
@@ -94,7 +94,3 @@ export default {
   }),
 };
 </script>
-
-<style scoped>
-
-</style>

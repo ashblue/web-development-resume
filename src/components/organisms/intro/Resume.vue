@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Icon from '../atoms/Icon.vue';
+import Icon from '../../atoms/Icon.vue';
 
 export default {
   name: 'Resume',

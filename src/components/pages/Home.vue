@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Intro from '../organisms/Intro.vue';
-import MobileBioCard from '../organisms/MobileBioCard.vue';
+import Intro from '../organisms/intro/Intro.vue';
+import MobileBioCard from '../organisms/bio-cards/FullBleedBioCard.vue';
 import Footer from '../organisms/Footer.vue';
 
 export default {

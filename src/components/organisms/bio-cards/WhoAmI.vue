@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ListIconLinks, { IconLinkData } from '../molecules/ListIconLinks.vue';
+import ListIconLinks, { IconLinkData } from '../../molecules/ListIconLinks.vue';
 
 export default {
   name: 'WhoAmI',

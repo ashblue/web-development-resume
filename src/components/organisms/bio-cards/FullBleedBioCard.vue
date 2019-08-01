@@ -1,6 +1,6 @@
 <template>
   <div class="ab-o-mobile-bio-card">
-    <img class="ab-o-mobile-bio-card__background" src="./../../assets/ash-blue-mobile.jpg" />
+    <img class="ab-o-mobile-bio-card__background" src="./../../../assets/ash-blue-mobile.jpg" />
     <div class="ab-o-mobile-bio-card__overlay"></div>
     <who-am-i class="ab-o-mobile-bio-card__info"></who-am-i>
   </div>
@@ -10,7 +10,7 @@
 import WhoAmI from './WhoAmI.vue';
 
 export default {
-  name: 'MobileBioCard',
+  name: 'FullBleedBioCard',
   components: {
     WhoAmI,
   },

@@ -1,6 +1,6 @@
 <template>
   <div class="ab-o-bio-card">
-    <img class="ab-o-bio-card__pic" src="./../../assets/ash-blue.jpg" />
+    <img class="ab-o-bio-card__pic" src="./../../../assets/ash-blue.jpg" />
     <div class="ab-o-bio-card__gradient"></div>
     <who-am-i class="ab-o-bio-card__info mb-4"></who-am-i>
   </div>
