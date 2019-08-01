@@ -1,7 +1,7 @@
 <template>
   <ul class="list-unstyled d-flex justify-content-center">
     <li v-for="iconLink in iconLinks"
-        v-bind:key="iconLink.title"
+        :key="iconLink.title"
         class="px-2">
       <IconLink
         :title="iconLink.title"

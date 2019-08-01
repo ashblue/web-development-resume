@@ -17,53 +17,7 @@
           CI/CD to help teams create cutting edge solutions.
         </p>
 
-        <div class="mb-5">
-          <h3 class="text-hide">Details</h3>
-
-          <div class="row">
-            <div class="col-3">
-              <Icon namespace="fas" icon="clock" />&nbsp;
-              <span class="text-uppercase font-weight-bold small align-text-bottom">Age</span>
-            </div>
-
-            <div class="col">
-              {{age}}
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-3">
-              <Icon namespace="fas" icon="map-marker" />
-              <span class="text-uppercase font-weight-bold"> Location</span>
-            </div>
-
-            <div class="col">
-              Denver
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-3">
-              <Icon namespace="fas" icon="phone" />
-              <span class="text-uppercase font-weight-bold"> Phone</span>
-            </div>
-
-            <div class="col">
-              <a href="tel:312-344-3792">312-344-3792</a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-3">
-              <Icon namespace="fas" icon="envelope" />
-              <span class="text-uppercase font-weight-bold"> Email</span>
-            </div>
-
-            <div class="col">
-              <a href="mailto:ash@blueashes.com">ash@blueashes.com</a>
-            </div>
-          </div>
-        </div>
+        <DetailsCollection class="mb-5" />
 
         <Resume />
       </div>
@@ -73,8 +27,8 @@
 
 <script>
 import BioCard from '../bio-cards/BioCard.vue';
-import Icon from '../../atoms/Icon.vue';
 import Resume from './Resume.vue';
+import DetailsCollection from './DetailsCollection.vue';
 
 function getBirthday() {
   const birthday = new Date(1987, 8, 25);
@@ -86,7 +40,7 @@ export default {
   name: 'Intro',
   components: {
     Resume,
-    Icon,
+    DetailsCollection,
     BioCard,
   },
   data: () => ({
