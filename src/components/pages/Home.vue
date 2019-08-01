@@ -36,11 +36,6 @@ export default {
     min-height: 100vh;
     flex-direction: column;
 
-    &__header {
-      position: relative;
-      height: 400px;
-    }
-
     &__content {
       flex: 1;
     }

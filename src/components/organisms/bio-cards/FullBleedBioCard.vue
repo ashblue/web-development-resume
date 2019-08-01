@@ -1,8 +1,10 @@
 <template>
-  <div class="ab-o-mobile-bio-card">
-    <img class="ab-o-mobile-bio-card__background" src="./../../../assets/ash-blue-mobile.jpg" />
-    <div class="ab-o-mobile-bio-card__overlay"></div>
-    <who-am-i class="ab-o-mobile-bio-card__info"></who-am-i>
+  <div class="ab-o-full-bleed-bio-card">
+    <img
+      alt="Ash Blue"
+      class="ab-o-full-bleed-bio-card__portrait mx-auto mt-4 mb-4 d-block"
+      src="./../../../assets/ash-blue-mobile.jpg" />
+    <who-am-i class="ab-o-full-bleed-bio-card__info mb-4"></who-am-i>
   </div>
 </template>
 
@@ -18,28 +20,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .ab-o-mobile-bio-card {
-    &__overlay {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
-    }
+  @import "../../../styles/colors";
 
-    &__background {
-      width: 100%;
-      height: 100%;
+  .ab-o-full-bleed-bio-card {
+    background: $colorFullBleedBackground;
+
+    &__portrait {
+      $size: 220px;
+      width: $size;
+      height: $size;
       object-fit: cover;
-      position: absolute;
-    }
-
-    &__info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
+      border-radius: $size;
+      border: 4px solid lighten($colorFullBleedBackground, 20%);
     }
   }
 </style>
