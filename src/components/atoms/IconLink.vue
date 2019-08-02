@@ -1,6 +1,6 @@
 <template>
   <a
-    class="h4"
+    class="fa-2x text-muted"
     target="_blank"
     :href="url"
     :title="title"

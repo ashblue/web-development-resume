@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="text-center font-weight-bold display-4 mb-3">Ash Blue</h1>
-    <h2 class="text-center h6 mb-3">Senior Web Developer</h2>
+    <h1 class="text-center font-weight-bold display-4 mb-0">Ash Blue</h1>
+    <h2 class="text-center h6 mb-3 text-primary">Senior Web Developer</h2>
     <ListIconLinks :iconLinks="iconLinks" />
   </div>
 </template>

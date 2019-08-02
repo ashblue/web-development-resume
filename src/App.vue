@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "styles/colors";
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.css";
 </style>
