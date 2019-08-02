@@ -6,8 +6,9 @@
         <div class="col-12 offset-lg-4 col-lg-4">
           <p class="mb-4">
             This custom resume is hosted through GitHub pages and deployed via Travis CI
-            as an open source project. <a href="#">Source code</a> available for your
-            viewing pleasure.
+            as an open source project.
+            <a target="_blank" href="https://github.com/ashblue/web-development-resume">Source code</a>
+            available for your viewing pleasure.
           </p>
         </div>
 

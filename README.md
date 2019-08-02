@@ -1,4 +1,7 @@
-# resume
+# Ash Blue's Web Development Resume
+
+Source code for my resume built with Vue and Bootstrap. Automatically deployed with Travis CI
+to GitHub pages.
 
 ## Project setup
 ```
