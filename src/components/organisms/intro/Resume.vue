@@ -6,9 +6,17 @@
       target="_blank"
       href="https://www.dropbox.com/s/g4qs3w85qqldu1s/Resume-Ash-Blue.pdf?dl=0"
       class="btn btn-primary btn-lg btn-block mb-2">
-      <Icon namespace="fas" icon="file-pdf" />&nbsp;
+      <Icon namespace="fas" icon="file" />&nbsp;
       View Resume
     </a>
+
+    <p class="small text-muted text-center">
+      <a
+        target="_blank"
+        href="./resume-ash-blue-web-developer.pdf">
+        Download Resume As PDF <Icon namespace="fas" icon="file-pdf" />
+      </a>
+    </p>
   </div>
 </template>
 
